@@ -1,0 +1,72 @@
+.AddedContentContainer {
+    display: flex;
+    gap: 20px;
+    margin-top: 1%;
+    border-radius: 10px;
+    box-shadow: rgba(192, 143, 143, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+.todoItems {
+    font-size: 40px;
+    padding: 30px;
+    /* margin-left: 16px; */
+    width:75%;
+    border: none;
+}
+
+.btnContainer {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    /* gap: 5px; */
+}
+
+.removeItemBtn,
+.editBtn {
+    /* height: 80px; */
+    width: 40%;
+    margin:18px;
+    /* padding: 40px; */
+    font-size: 40px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(175, 127, 127, 1) 25%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    cursor: pointer;
+}
+
+.notOk {
+    /* background: #fff; */
+    cursor: text;
+}
+.statusOk {
+    background: lightgreen;
+}
+
+@media (380px <= width <=720px) {
+.todoItems{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.btnContainer{
+    width: 100%;
+}
+.removeItemBtn,
+.editBtn {
+padding: 5px;
+font-size: 30px;
+
+}
+    
+}

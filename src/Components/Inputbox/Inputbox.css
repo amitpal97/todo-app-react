@@ -1,0 +1,69 @@
+.InputContainer {
+    margin-top: 1%;
+    border-radius: 24px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(51, 51, 70, 1) 25%,
+        rgba(0, 212, 255, 1) 100%
+    );
+    width: 100%;
+}
+
+.formCont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.inputBoxContent {
+    /* border: 2px solid rgb(175, 91, 198); */
+    border-radius: 10px;
+    font-size: 40px;
+    padding: 20px;
+    margin: 20px;
+    width: 85%;
+    caret-color: red;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; /* padding: 22px; */
+}
+
+.addBtn {
+    /* width: 20%; */
+    padding: 20px;
+    font-size: 40px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+    border: none;
+    margin: 20px;
+}
+
+@media (380px <= width <=720px) {
+    .formCont {
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: center;
+    }
+    .inputBoxContent {
+        font-size: 30px;
+        padding: 15px;
+        margin: 10px;
+
+    }
+
+    .addBtn{
+        font-size: 20px;
+        margin: 10px;
+        margin-top: 0px;
+        color:black;
+        border: 2px solid #fff;
+        padding: 15px;
+
+    }
+}
