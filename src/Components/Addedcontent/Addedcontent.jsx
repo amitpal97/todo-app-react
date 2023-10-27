@@ -28,12 +28,12 @@ function Addedcontent({
         setEditText(todoItem.name);
         setEditTrueText(true);
     }
-    
+
     // debugger
     function onSaveClick() {
         // console.log(elm,"saveElm");
         // todoItem.name = editText;
-        // console.log(editText, "editText");
+        console.log(editText, "editText");
         EditTodo(editText);
         setEditTrueText(false);
     }
@@ -41,7 +41,6 @@ function Addedcontent({
     return (
         <>
             <div className="AddedContentContainer">
-                
                 {editTrueText ? (
                     <input
                         className="todoItems"
@@ -57,6 +56,7 @@ function Addedcontent({
                             todoItem.status ? "statusOk" : "notOk"
                         }`}
                     >
+                        {editText ? editText : todoItem.name}
                         {todoItem.name}
                     </div>
                 )}

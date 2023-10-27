@@ -47,6 +47,7 @@ function App() {
 
     function EditTodo(editElm) {
         console.log(editElm, "save edit element");
+        // console.log(saveText,"saveText");
         setSaveText(editElm)
     }
 
