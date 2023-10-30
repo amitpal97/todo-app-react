@@ -57,7 +57,7 @@ function Addedcontent({
                         }`}
                     >
                         {editText ? editText : todoItem.name}
-                        {todoItem.name}
+                        {/* {todoItem.name} */}
                     </div>
                 )}
 
